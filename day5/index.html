@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Directory</title>
+    <script src="users.js" defer></script>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; max-width: 600px; margin: auto; }
+        .user-card { border: 1px solid #ccc; padding: 15px; margin-bottom: 10px; border-radius: 5px; }
+        #filter-input { width: 100%; padding: 8px; margin: 10px 0; box-sizing: border-box; }
+        button { padding: 10px 15px; cursor: pointer; }
+        ul { list-style-type: none; padding: 0; }
+    </style>
+</head>
+<body>
+    <h1>User Directory</h1>
+    
+    <button id="load-users">Load Users</button>
+    <p id="status"></p>
+
+    <label for="filter-input">Filter by name:</label>
+    <input type="text" id="filter-input" placeholder="Type a name to filter...">
+
+    <ul id="users-list"></ul>
+</body>
+</html>
